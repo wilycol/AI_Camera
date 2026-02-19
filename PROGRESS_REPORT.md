@@ -4,29 +4,29 @@
 
 As of 2026-02-19 14:56:57 UTC, the AI_Camera project has reached the following milestones:
 
-- **Model Selection:** The project is currently using the following models:
-  - Model A: MTCNN (Multi-task Cascaded Convolutional Networks) for Face Detection.
-  - Model B: FaceNet (Inception ResNet v1) for Face Recognition/Embeddings.
+- **Model Selection:** The project has been modernized to use PyTorch:
+  - Model A: facenet-pytorch MTCNN (Multi-task Cascaded Convolutional Networks) for Face Detection.
+  - Model B: facenet-pytorch InceptionResnetV1 (pretrained on VGGFace2) for 512-d Face Embeddings.
 
 - **Features Implemented:**
-  - Feature 1: Description
-  - Feature 2: Description
-
-- **Features in Development:**
-  - Feature 3: Face Registration (Storing embeddings in MongoDB).
-  - Feature 4: Live Recognition Logging (Tracking events in MongoDB).
+  - Feature 1: Face Detection with MTCNN (PyTorch).
+  - Feature 2: Face Recognition with InceptionResnetV1 (512-d).
+  - Feature 3: L2-Normalized Embeddings & Cosine Similarity logic.
+  - Feature 4: Scalable MongoDB Schema (Roles, Active Status).
+  - Feature 5: Multi-face Detection Support (Phase 1 Ready).
+  - Feature 6: Audit-ready Logging with confidence scores.
 
 ## Model Download Links
 
-- [FaceNet Model (facenet_keras.h5)](https://github.com/neelanjan00/Face-Recognition-Facenet-/blob/master/facenet_keras.h5)
-- [MTCNN is available via pip install]
+- [Models are automatically downloaded via facenet-pytorch library]
 
 ## Next Steps
 
-- Continue working on Feature 3 and Feature 4.
-- Start testing the implemented features.
-- Prepare for the next demo presentation.
+- **Phase 2:** Implement concurrent identification loop for multi-face scenarios.
+- **Phase 3:** Develop administrative interface for role and user management.
+- **Testing:** Perform field tests with different lighting and backgrounds.
 
 ## Notes
 
-- Feedback from the last presentation has been noted and will be addressed in upcoming updates.
+- The system is now normalized and uses Cosine Similarity (threshold target: 0.75).
+- Ready for production deployment using `waitress`.
