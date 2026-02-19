@@ -5,23 +5,21 @@
 As of 2026-02-19 14:56:57 UTC, the AI_Camera project has reached the following milestones:
 
 - **Model Selection:** The project is currently using the following models:
-  - Model A: Description of Model A (Version X.X)
-  - Model B: Description of Model B (Version Y.Y)
+  - Model A: MTCNN (Multi-task Cascaded Convolutional Networks) for Face Detection.
+  - Model B: FaceNet (Inception ResNet v1) for Face Recognition/Embeddings.
 
 - **Features Implemented:**
   - Feature 1: Description
   - Feature 2: Description
 
 - **Features in Development:**
-  - Feature 3: Description
-  - Feature 4: Description
+  - Feature 3: Face Registration (Storing embeddings in MongoDB).
+  - Feature 4: Live Recognition Logging (Tracking events in MongoDB).
 
 ## Model Download Links
 
-The models used in this project can be downloaded from the following links:
-
-- [Model A Download Link](http://example.com/model-a)
-- [Model B Download Link](http://example.com/model-b)
+- [FaceNet Model (facenet_keras.h5)](https://github.com/neelanjan00/Face-Recognition-Facenet-/blob/master/facenet_keras.h5)
+- [MTCNN is available via pip install]
 
 ## Next Steps
 

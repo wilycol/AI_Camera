@@ -1,11 +1,12 @@
 # Implementation Guide for AI_Camera
 
 ## 1. Installation
-   - **System Requirements**: List of necessary hardware and software requirements.
+   - **System Requirements**: Python 3.8+, MongoDB service.
    - **Installation Steps**: 
       1. Clone the repository.
-      2. Install dependencies using `pip install -r requirements.txt`.
-      3. Set up any necessary databases.
+      2. Install dependencies using `pip install -r requirements_cpu.txt`.
+      3. **Important**: Download `facenet_keras.h5` from the Link in `PROGRESS_REPORT.md` and place it in the root directory.
+      4. Ensure MongoDB is running locally on port 27017.
 
 ## 2. Configuration
    - **Configuration Files**: Description of config files and parameters.
